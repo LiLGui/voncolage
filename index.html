@@ -8,44 +8,126 @@
     <title>Voncolage</title>
 </head>
 <body>
-        <header class="header">
-            <p><a href="#">Voncolage</a></p>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Artes</a></li>
-                <li><a href="#">Author</a></li>
-                <li class="white"><a href="#">Contact</a></li>
-            </ul>
-        </header>
+    <header class="header">
         <div class="icon-menu" onclick="openii()" id="buu">
-         <ion-icon name="menu-outline"></ion-icon>
+            <ion-icon class="center" name="menu-outline"></ion-icon>
         </div>
-        <div class="menu" id="open-menu">
-            <h4>Menu</h4>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Artes</a></li>
-                <li><a href="#">Author</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <p><a href="#">Voncolage</a></p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Artes</a></li>
+            <li><a href="#">Author</a></li>
+            <li class="white"><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="menu" id="open-menu">
+        <h4>Menu</h4>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#artes">Artes</a></li>
+            <li><a href="#autor">Autor</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="clb">
             <button type="button" onclick="modal()">Contact</button>
         </div>
-        <div class="modal"></div>
-        <section class="section">
-            <div class="slide">
-                <div class="gray">
-                    <img src="img/slide.jpg" alt="">
-                </div>
-                <!-- <div class="info">
-                    <h1>Welcome to Voncolage!</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga, deserunt distinctio sit id tempore culpa modi perspiciatis temporibus accusamus?</p>
-                    <button type="button">View More</button>
-                </div> -->
+        <div class="text-inf">
+            <h3>More info</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rem corrupti harum veritatis impedit nihil eveniet amet beatae libero minus neque cupiditate quia voluptates, temporibus facilis cum, similique fugiat debitis!
+            <div class="redes">
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-github"></ion-icon></a>
             </div>
-            <section class="tables">
-                <h3>Artes</h3>
-            </section>
+        </div>
+    </div>
 
+    <div class="modal"></div>
+
+    <section class="content">
+        <div class="hero" id="home">
+            <div class="grat">
+                <img src="img/slide.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="boxes">
+            <h2 id="artes">Artes</h2>
+            <div class="mini-box">
+                <div class="boxes-in">
+                    <div class="box-mn">
+                        <div class="im">
+                            <img src="img/prod/neil.png" alt="">
+                        </div>
+                        <div class="inf-txt">
+                            <h4>Neil deGrasson</h4>
+                        </div>
+                    </div>
+    
+                    <div class="box-mn">
+                        <div class="im">
+                            <img src="img/prod/picasso.png" alt="">
+                        </div>
+                        <div class="inf-txt">
+                            <h4>Pablo Picasso</h4>
+                        </div>
+                    </div>
+    
+                    <div class="box-mn">
+                        <div class="im">
+                            <img src="img/prod/frida.png" alt="">
+                        </div>
+                        <div class="inf-txt">
+                            <h4>Frida Khalo</h4>
+                        </div>
+                    </div>
+    
+                    <div class="box-mn">
+                        <div class="im">
+                            <img src="img/prod/3.png" alt="">
+                        </div>
+                        <div class="inf-txt">
+                            <h4>Big Robot</h4>
+                        </div>
+                    </div>
+
+                    <div class="box-mn">
+                        <div class="im">
+                            <img src="img/prod/2.png" alt="">
+                        </div>
+                        <div class="inf-txt">
+                            <h4>Einstein Iluminado</h4>
+                        </div>
+                    </div>
+
+                    <div class="box-mn">
+                        <div class="im">
+                            <img src="img/prod/1.png" alt="">
+                        </div>
+                        <div class="inf-txt">
+                            <h4>MonaEye</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="merch">
+                <img src="img/anun.jpg" alt="">
+            </div>
+            <div class="big-box" id="autor">
+                <h3>lorem</h3>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis vero, animi atque magnam illum ea eaque odio aliquam ab eius.
+
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente omnis inventore placeat voluptatem sequi ipsa, id animi non aliquid blanditiis numquam sunt quia fugiat nemo autem quisquam magnam quaerat vitae.
+
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusantium, esse sint quae cumque numquam molestiae deleniti est, aliquid vel doloribus consequatur natus. Debitis quae repellendus libero sequi esse cumque.
+            </div>
+        </div>
+
+        <footer>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt et quis delectus expedita explicabo molestiae officiis praesentium quia quidem tempore aperiam a debitis ullam rem atque animi, labore sit dolore.
+        </footer>
+    </section>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
