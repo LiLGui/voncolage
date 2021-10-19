@@ -5,25 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Teste Github pages</title>
+    <title>Voncolage</title>
 </head>
 <body>
-    <header class="header">
-        <a href="#"><h1>Logo</h1></a>
-        <nav class="menu">
+        <header class="header">
+            <p><a href="#">Voncolage</a></p>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Artes</a></li>
+                <li><a href="#">Author</a></li>
+                <li class="white"><a href="#">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-    <section class="section-body">
-        <a href="outro.html">Click</a>
-    </section>
-    <footer class="end-page">
+        </header>
+        <div class="icon-menu" onclick="openii()" id="buu">
+         <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <div class="menu" id="open-menu">
+            <h4>Menu</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Artes</a></li>
+                <li><a href="#">Author</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button type="button" onclick="modal()">Contact</button>
+        </div>
+        <div class="modal"></div>
+        <section class="section">
+            <div class="slide">
+                <div class="gray">
+                    <img src="img/slide.jpg" alt="">
+                </div>
+                <!-- <div class="info">
+                    <h1>Welcome to Voncolage!</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga, deserunt distinctio sit id tempore culpa modi perspiciatis temporibus accusamus?</p>
+                    <button type="button">View More</button>
+                </div> -->
+            </div>
+            <section class="tables">
+                <h3>Artes</h3>
+            </section>
 
-    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
