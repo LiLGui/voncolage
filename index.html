@@ -1,136 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Voncolage</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <div class="icon-menu" onclick="openii()" id="buu">
-            <ion-icon class="center" name="menu-outline"></ion-icon>
-        </div>
-        <p><a href="#">Voncolage</a></p>
+
+    <header id="header">
+        <h1 id="logo"><a href="#">VonColage</a></h1>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Artes</a></li>
-            <li><a href="#">Author</a></li>
-            <li class="white"><a href="#">Contact</a></li>
-        </ul>
-    </header>
-    <div class="menu" id="open-menu">
-        <h4>Menu</h4>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#artes">Artes</a></li>
+            <li><a href="#projects">Projetos</a></li>
             <li><a href="#autor">Autor</a></li>
-            <li><a href="#">Contact</a></li>
+            <a href="#contato"><li>Contato</li></a>
         </ul>
-        <div class="clb">
-            <button type="button" onclick="modal()">Contact</button>
+        <div onclick="open_menu()" class="burguer" id="burg">
+            <i class='bx bx-menu-alt-left' ></i>
         </div>
-        <div class="text-inf">
-            <h3>More info</h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rem corrupti harum veritatis impedit nihil eveniet amet beatae libero minus neque cupiditate quia voluptates, temporibus facilis cum, similique fugiat debitis!
+    </header>
+
+    <div class="box-menu" id="box-menu">
+        <div class="menu">
+            <h3>Menu</h3>
+            <nav>
+                <ul>
+                    <li onclick="close_menu()"><a href="#"><i class='bx bx-home-alt'></i>Home</a></li>
+                    <li onclick="close_menu()"><a href="#projects"><i class='bx bx-network-chart' ></i>Projetos</a></li>
+                    <li onclick="close_menu()"><a href="#autor"><i class='bx bx-user' ></i>Autor</a></li>
+                    <li onclick="close_menu()"><a href="#contato"><i class='bx bx-chat' ></i>Contato</a></li>
+                </ul>
+            </nav>
+            <div class="inf-menu">
+                <h3>Fique sempre por dentro!</h3>
+                <p>Me siga nas redes sociais para estar sempre atualizado de tudo.</p>
+            </div>
+            <div class="menu-controls">
+                <ul>
+                    <li><i class='bx bx-sun'></i></li>
+                    <li><i class='bx bx-bug-alt' ></i></li>
+                </ul>
+            </div>
             <div class="redes">
-                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                <h3>Minhas Redes</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/rafael.willian.thewill/"><i class='bx bxl-facebook-circle' ></i></a></li>
+                    <li><a href="https://www.instagram.com/rfael_guimaraes/"><i class='bx bxl-instagram' ></i></a></li>
+                    <li><a href="https://twitter.com/FawkesSr"><i class='bx bxl-twitter' ></i></a></li>
+                    <li><a href="https://github.com/LiLGui"><i class='bx bxl-github'></i></a></li>
+                </ul>
             </div>
-        </div>
+        </div><!-- FIM MENU -->
+        <div class="click-out" onclick="close_menu()">dfgd</div><!-- FIM CLICK-OUT -->
+    </div><!-- FIM BOX-MENU -->
+    <div class="controls">
+        <ul>
+            <li id="sun" onclick="bg_color_black()"><i class='bx bx-sun'></i></li>
+            <li><i class='bx bx-arrow-to-top'></i></li>
+            <li><i class='bx bx-bug-alt' ></i></li>
+        </ul>
     </div>
-
-    <div class="modal"></div>
-
-    <section class="content">
-        <div class="hero" id="home">
-            <div class="grat">
-                <img src="img/slide.jpg" alt="">
+    <div class="bloco-content">
+        <div class="slide">
+            <div class="inf-slide">
+                <h1>Bem Vindo!</h1>
+                <span>Está é a página da VonColage e está em Desenvolvimento.
+                    Explore!
+                </span>
+                <button type="button" onclick="butt_more()">View more</button>
             </div>
-        </div>
+            <div class="box">
+                <video autoplay loop src="midia/mp4/slide-back.mov"></video>
+            </div>
+        </div><!-- FIM SLIDE -->
+        <div class="txt">
+            <br>
+            <h2>O que é VonColage?</h2><br>
+            <p>
+                <strong>VonColage</strong> é arte! Criei esse projeto com o intuito de praticar minhas habilidades e por em prática meus conhecimentos em <strong>Design</strong>, <strong>Programação</strong>, e <strong>Desenvolvimento WEB</strong>. Espero que goste do meu trabalho e se você quiser me incentivar ainda mais eu só peço que siga minha página no Instagram! <a href="https://www.instagram.com/voncolage/">VonColage</a>.<i> Obrigadinho!</i>
+            </p><br>
 
-        <div class="boxes">
-            <h2 id="artes">Artes</h2>
-            <div class="mini-box">
-                <div class="boxes-in">
-                    <div class="box-mn">
-                        <div class="im">
-                            <img src="img/prod/neil.png" alt="">
-                        </div>
-                        <div class="inf-txt">
-                            <h4>Neil deGrasson</h4>
-                        </div>
-                    </div>
-    
-                    <div class="box-mn">
-                        <div class="im">
-                            <img src="img/prod/picasso.png" alt="">
-                        </div>
-                        <div class="inf-txt">
-                            <h4>Pablo Picasso</h4>
-                        </div>
-                    </div>
-    
-                    <div class="box-mn">
-                        <div class="im">
-                            <img src="img/prod/frida.png" alt="">
-                        </div>
-                        <div class="inf-txt">
-                            <h4>Frida Khalo</h4>
-                        </div>
-                    </div>
-    
-                    <div class="box-mn">
-                        <div class="im">
-                            <img src="img/prod/3.png" alt="">
-                        </div>
-                        <div class="inf-txt">
-                            <h4>Big Robot</h4>
-                        </div>
-                    </div>
+            <h2 id="projects">Projetos</h2><br>
+        </div><!-- FIM TXT -->
 
-                    <div class="box-mn">
-                        <div class="im">
-                            <img src="img/prod/2.png" alt="">
-                        </div>
-                        <div class="inf-txt">
-                            <h4>Einstein Iluminado</h4>
-                        </div>
-                    </div>
-
-                    <div class="box-mn">
-                        <div class="im">
-                            <img src="img/prod/1.png" alt="">
-                        </div>
-                        <div class="inf-txt">
-                            <h4>MonaEye</h4>
-                        </div>
-                    </div>
+        <div class="grid-arts">
+            <div class="bl1" onclick="artes()">
+                <div class="title-img">
+                    <h3>Artes</h3>
+                    <span>Colagens, Montagens, Edições de imagens.</span>
+                </div>
+                <img src="midia/img/1.jpg" alt="">
+                <div class="gray"></div>
+            </div>
+            <div class="bl2" onclick="web()">
+                <div class="title-img">
+                    <h3>WEB</h3>
+                    <span>Programação e Desenvolvimento.</span>
+                </div>
+                <img src="midia/img/2.jpg" alt="">
+                <div class="gray"></div>
+            </div>
+            <div class="bls" onclick="extras()">
+                <div class="title-img">
+                    <h3>Extras</h3>
+                    <span>Hacking, Edição de vídeos, Curiosidades.</span>
+                </div>
+                <div class="bls1">
+                    <img src="midia/img/3.jpg" alt="">
+                    <div class="gray"></div>
                 </div>
             </div>
-            <div class="merch">
-                <img src="img/anun.jpg" alt="">
-            </div>
-            <div class="big-box" id="autor">
-                <h3>lorem</h3>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis vero, animi atque magnam illum ea eaque odio aliquam ab eius.
-
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente omnis inventore placeat voluptatem sequi ipsa, id animi non aliquid blanditiis numquam sunt quia fugiat nemo autem quisquam magnam quaerat vitae.
-
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusantium, esse sint quae cumque numquam molestiae deleniti est, aliquid vel doloribus consequatur natus. Debitis quae repellendus libero sequi esse cumque.
-            </div>
         </div>
 
-        <footer>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt et quis delectus expedita explicabo molestiae officiis praesentium quia quidem tempore aperiam a debitis ullam rem atque animi, labore sit dolore.
-        </footer>
-    </section>
+        <div class="txt">
+            <br>
+            <!-- <h2>Quem somos</h2><br> -->
+            <p>
+                <strong>Todos</strong> esses projetos estão sendo desenvolvidos com base em meus conhecimentos em Web design e em Desenvolvimento WEB(HTML, CSS, JS, PHP)... Esses projetos são totalmente despretensiosos, com o intuito apenas de entreter minha mente nesse momento de <i>pandemia</i>.
+            </p>
+        </div><!-- FIM TXT -->
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <div class="txt">
+            <br>
+            <h2 id="autor">Autor</h2><br>
+            <div class="perfil">
+                <img src="midia/img/autor.jpg.png" alt="">
+            </div><br>
+            <p>
+                Olá! Eu me chamo <strong>Rafael William</strong> mas pode me chamar de rafa! Tenho 20 anos e sou <strong>desenvolvedor web</strong> e <strong>webdesigner</strong>!! Eu sei... Já falei isso umas três vezes rsrs, mas é legal falar isso. Se curtir meu trabalho entre em contato para mais dúvidas!
+            </p>
+            <div class="contato-but">
+                <button>Click Aqui</button>
+            </div>
+            <br>
+        </div><!-- FIM TXT -->
+
+    <footer class="end-page">
+        <h2>fim</h2>
+    </footer>
+    </div><!-- FIM BLOCO-CONTENT -->
+
+
+
+
+
+
     <script src="js/main.js"></script>
 </body>
 </html>
