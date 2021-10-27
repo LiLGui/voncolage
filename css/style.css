@@ -20,7 +20,7 @@
     --font-one:'Lora', serif;
     --font-two:'Open Sans', sans-serif;
     /* SIZES */
-    --page-size:1200px;
+    --page-size:1500px;
 }
 body{
     scroll-behavior: smooth;
@@ -57,7 +57,7 @@ body{
     font-weight: 600;
 }
 #header li:last-child{
-    background: var(--color-two);
+    background: var(--color-four);
     padding: 10px;
     border-radius:5px;
 }
@@ -101,30 +101,6 @@ body{
     top: 0;
     left: 0;
 }
-.controls{
-    z-index: 20;
-    padding: 20px 10px;
-    background: var(--color-one);
-    position: fixed;
-    top: 40%;
-    transform: translateY(-50%);
-    left: 20px;
-    border-radius: 10px;
-}
-.controls ul{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-}
-.controls li{
-    color: var(--color-three);
-    font-size: 2rem;
-    margin-bottom: 15px;
-    cursor: pointer;
-}
-.controls li:last-child{
-    margin-bottom: 0px;
-}
 .menu-controls{
     width: 100%;
     color: var(--color-three);
@@ -156,6 +132,10 @@ body{
     font-family: var(--font-two);
     margin-bottom: 10px;
     font-size: 1.3rem;
+}
+.font-min{
+    color: rgb(192, 188, 188) !important;
+    font-size: .9rem !important;
 }
 .menu nav li{
     font-size: 1.2rem;
@@ -207,18 +187,20 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-two);
+    /* background-color: var(--color-two); */
 }
 .slide .box{
     width: 100%;
     height: 100%;
     background: rgb(34, 34, 34);
+    border-radius: 10px;
 }
-.slide .box video{
+.slide .box img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: bottom;
+    border-radius: 10px;
     opacity: .4;
 }
 .inf-slide{
@@ -278,6 +260,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 .bl1,
 .bl2,
@@ -285,6 +268,7 @@ body{
     transition: .3s;
     cursor: pointer;
     border: none;
+    border-radius: 10px;
 }
 .bl1:hover,
 .bl2:hover,
@@ -344,16 +328,25 @@ body{
     background: linear-gradient(to top, rgba(0, 0, 0, 0.726), rgba(255, 255, 255, 0));
     position: absolute;
     top: 0;
+    border-radius: 10px;
 }
 .perfil{
     width: 100%;
     height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.perfil img{
+.imagem-perfil{
+    width: 300px;
+    height: 300px;
+}
+.imagem-perfil img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 50%;
 }
 .contato-but{
     max-width: var(--page-size);
@@ -375,7 +368,23 @@ body{
     width: 100%;
     height: 200px;
     background: var(--color-one);
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.links-end{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+.links-end li a{
+    color: var(--color-three);
+    font-size: 1.3rem;
 }
 @media screen and (max-width:1400px) {
     .controls{

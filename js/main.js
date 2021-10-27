@@ -37,6 +37,9 @@ function extras(){
 function butt_more(){
   window.location.href = "https://github.com/LiLGui"
 }
+const me = () => {
+  window.location.href = "https://www.instagram.com/rfael_guimaraes/"
+}
 // function bg_color_black() {
 //   cop.style.background = 'var(--color-bg_two)';
 //   sun.setAttribute('onclick', 'bg_color_white()');
