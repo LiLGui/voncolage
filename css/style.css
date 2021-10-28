@@ -20,7 +20,7 @@
     --font-one:'Lora', serif;
     --font-two:'Open Sans', sans-serif;
     /* SIZES */
-    --page-size:1300px;
+    --page-size:1000px;
 }
 body{
     scroll-behavior: smooth;
